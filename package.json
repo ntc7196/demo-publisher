@@ -1,12 +1,10 @@
 {
-  "name": "fe-template",
+  "name": "demo",
   "version": "1.0.0",
-  "description": "simple templete for fe-developers",
-  "author": "NHAT.BUI",
-  "url": "https://www.facebook.com/Cheatsomething",
-  "license": "MIT License",
+  "description": "simple templete demo",
+  "author": "ntc",
   "keywords": [
-    "fe template"
+    "demo"
   ],
   "scripts": {
     "start": "gulp serve"
@@ -24,7 +22,6 @@
     "prettier": "2.7.1"
   },
   "dependencies": {
-    "gulp-htmlmin": "^5.0.1",
-    "swiper": "^8.4.4"
+    "gulp-htmlmin": "^5.0.1"
   }
 }
