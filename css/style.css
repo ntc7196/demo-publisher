@@ -1,8 +1,3 @@
-h1 {
-	color: #cac3c3;
-	background-color: #292925;
-}
-
 .btn-link {
 	text-decoration: none;
 }
@@ -11,25 +6,24 @@ h1 {
 	display: none;
 }
 
-header {
+header.container-fluid {
 	width: 100%;
 	height: 430px;
 	background-image: url('../images/visual_business.png');
 }
 
-header .header-menu {
-	padding-top: 30px;
-	padding-bottom: 30px;
+header.container-fluid .header-menu {
+	padding: 30px 80px;
 }
 
-header .logo {
+header.container-fluid .logo {
 	width: 115px;
 	height: 30px;
 	background-image: url('../images/logo.png');
 	background-repeat: no-repeat;
 }
 
-header .menu-mid a {
+header.container-fluid .menu-mid a {
 	font-family: 'Montserrat';
 	font-weight: 500;
 	text-align: center;
@@ -37,7 +31,7 @@ header .menu-mid a {
 	color: #fff;
 }
 
-header .mid-text {
+header.container-fluid .mid-text {
 	font-family: 'Spoqa Han Sans Neo';
 	font-size: 60px;
 	font-weight: bold;
@@ -47,18 +41,18 @@ header .mid-text {
 	color: #fff;
 }
 
-header .mid-text span {
+header.container-fluid .mid-text span {
 	width: 12px;
 	height: 12px;
 	color: #fa0000;
 }
 
-header .right-block {
+header.container-fluid .right-block {
 	display: flex;
 	float: right;
 }
 
-header .right-block .btn-link {
+header.container-fluid .right-block .btn-link {
 	font-family: 'Montserrat';
 	font-weight: 500;
 	text-align: center;
@@ -66,7 +60,7 @@ header .right-block .btn-link {
 	color: #fff;
 }
 
-header .right-block .divider {
+header.container-fluid .right-block .divider {
 	width: 2px;
 	height: 23px;
 	opacity: .4;
@@ -125,5 +119,435 @@ nav.main-menu .container .item button {
 	height: 100%;
 	letter-spacing: 0;
 	color: #303030;
+}
+
+.menu-quickly {
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	width: 75px;
+	transform: translateY(-50%);
+	opacity: .8;
+	background: #000;
+}
+
+.menu-quickly .menu-block {
+	display: flex;
+	width: 100%;
+	height: 80px;
+	cursor: pointer;
+	transition: all .3s linear;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-quickly .menu-block i {
+	font-size: 30px;
+	color: #fff;
+}
+
+.menu-quickly .menu-block.selected {
+	opacity: .7;
+	background: #f00;
+}
+
+.menu-quickly .menu-block:hover {
+	opacity: .7;
+	background: #f00;
+}
+
+.quick-menu {
+	font-family: sans-serif;
+	position: fixed;
+	z-index: 100;
+	right: 0;
+	width: 130px;
+	padding: 5px;
+	opacity: .9;
+	background: #333;
+}
+
+.main-title {
+	padding: 60px 0;
+}
+
+.main-title h1 {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 46px;
+	font-weight: bold;
+	line-height: 46px;
+	text-align: center;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.main-title header {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 46px;
+	font-weight: bold;
+	line-height: 46px;
+	margin-left: calc(50% - 125px);
+	text-align: center;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.main-title .btn {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 18px;
+	border: solid 1px #d7d7d7;
+	border-radius: unset;
+}
+
+.main-title .btn-product-nquiry {
+	width: 145px;
+	height: 50px;
+}
+
+.main-title .btn-catalog {
+	width: 220px;
+	height: 50px;
+}
+
+.swiper-block .swiper {
+	width: 100%;
+	height: 700px;
+}
+
+.swiper-block .swiper figcaption {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 20px;
+	line-height: 36px;
+	position: absolute;
+	top: 35%;
+	left: 240px;
+	width: 735px;
+	letter-spacing: 0;
+	color: #fff;
+}
+
+.block-item {
+	padding-bottom: 60px;
+}
+
+.block-item header {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 74px;
+	margin-bottom: 30px;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.block-item figure {
+	height: 455px;
+}
+
+.block-item figure img {
+	width: 100%;
+	height: 100%;
+	background-color: #eceef0;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.block-item figure figcaption {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 26px;
+	font-weight: 500;
+	margin-top: 10px;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.btn-paging {
+	width: 46px;
+	height: 46px;
+	border: 1px solid #d7d7d7;
+	border-radius: 23px;
+	background-color: #fff;
+}
+
+.btn-paging i {
+	color: #d7d7d7;
+}
+
+.page-text {
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
+}
+
+.related-content {
+	background-color: #f4f5f7;
+}
+
+.related-content header {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 38px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.related-content .container {
+	padding: 120px 0;
+}
+
+.related-content .item-list {
+	padding: 30px 0 60px 0;
+}
+
+.related-content .item-list figure {
+	height: 305px;
+}
+
+.related-content .item-list figure img {
+	width: 100%;
+	height: 100%;
+	background-color: #eceef0;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.related-content .item-list figure figcaption {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 26px;
+	font-weight: 500;
+	margin-top: 10px;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.related-content .item-list figure figcaption a {
+	font-family: 'Montserrat';
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #093389;
+}
+
+.related-solutions {
+	padding: 120px 0 30px 0;
+}
+
+.related-solutions header {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 38px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.related-solutions .item-list {
+	height: 120px;
+}
+
+.related-solutions .item-list img {
+	width: 120px;
+	height: 120px;
+	padding: 20px;
+	border-radius: 50%;
+	background-color: white;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.related-solutions .item-list .text {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 40px;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.related-solutions .item-list figure:not(:last-child) {
+	border-right: 1px solid #d7d7d7;
+}
+
+.view-all {
+	padding: 60px 0;
+}
+
+.view-all .btn-all {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 32px;
+	width: 248px;
+	height: 80px;
+	text-align: center;
+	letter-spacing: 0;
+	color: #fff;
+	background-color: #303030;
+}
+
+.search-box {
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.search-box h1 {
+	font-family: 'Montserrat';
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+.search-box h3 {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 20px;
+	letter-spacing: 0;
+	color: #000;
+}
+
+.search-box .ms-n5 {
+	margin-left: -40px;
+}
+
+.search-box .form-control {
+	border-top: unset;
+	border-right: unset;
+	border-bottom: 2px solid #000;
+	border-left: unset;
+	border-radius: 0;
+}
+
+.search-box .suggest-block {
+	margin-bottom: 120px;
+}
+
+.search-box .suggest-block button {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: 0;
+	color: #000;
+	border: 1px solid #d7d7d7;
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.scroll-top {
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 38px;
+	position: fixed;
+	right: 0;
+	bottom: calc(50% - 320px);
+	width: 75px;
+	cursor: pointer;
+	text-align: center;
+	text-align: center;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	color: #999;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+	color: #fff;
+	background-color: #000;
+	align-items: center;
+	justify-content: center;
+}
+
+footer .footer-block a {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 16px;
+	line-height: 40px;
+	text-decoration: none;
+	letter-spacing: 0;
+	opacity: .6;
+	color: #fff;
+}
+
+footer .footer-block .title {
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+}
+
+footer .logo {
+	width: 112px;
+}
+
+footer .about .bottom {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 38px;
+	letter-spacing: 0;
+	opacity: .4;
+	color: #fff;
+}
+
+footer .about .bottom p {
+	font-family: 'Spoqa Han Sans Neo';
+	line-height: 30px;
+	display: inline;
+	margin-right: 15px;
+	white-space: nowrap;
+}
+
+footer .about .top {
+	font-family: 'Spoqa Han Sans Neo';
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 20px;
+	letter-spacing: 0;
+	color: #fff;
+}
+
+footer .about .top p {
+	display: inline;
+	margin-right: 20px;
+	white-space: nowrap;
+}
+
+footer .select {
+	width: 180px;
+}
+
+footer .select .wrap-select {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: 400;
+	padding: 15px;
+	letter-spacing: 0;
+	opacity: .4;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+footer .select .wrap-select i {
+	float: right;
+}
+
+footer .line {
+	width: 100%;
+	height: 2px;
+	margin-bottom: 50px;
+	background-color: #666;
+}
+
+@media (min-width: 1440px) {
+
+.container {
+	width: 1440px;
+	max-width: 1440px;
+}
+
 }
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="사각형_733" data-name="사각형 733" class="cls-1" d="M267,462l9.3-8,9.7,8v13H267V462Z" transform="translate(-266 -453)"/>
+</svg>

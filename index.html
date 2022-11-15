@@ -1,212 +1,412 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <header class="container-fluid">
-      <div class="row header-menu fixed-top px-5">
-        <div class="logo col"></div>
-        <div class="menu-mid col-6 m-auto">
-          <div class="row row-cols-5">
-            <a href="#Company">Company</a>
-            <a href="#Business">Business</a>
-            <a href="#ESG">ESG</a>
-            <a href="#News">News</a>
-            <a href="#Customer">Customer</a>
-          </div>
-        </div>
-        <div class="right-block col-2 hstack">
-          <div class="dropdown ms-auto">
-            <button
-              class="btn btn-link dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              <span class="px-2">KOR</span>
-              <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">EN</a></li>
-            </ul>
-          </div>
-          <div class="search">
-            <button class="btn btn-link">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-          <div class="divider"></div>
-          <div class="more-mennu">
-            <button class="btn btn-link">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="row mid-text">
-        <div class="m-auto">제품<span>.</span></div>
-      </div>
-    </header>
-    <nav class="main-menu container-fluid">
-      <div class="container px-0">
-        <div class="row h-100">
-          <div class="item item-home">
-            <button class="btn btn-link">
-              <i class="fa-solid fa-house"></i>
-            </button>
-          </div>
-          <div class="item item-dropdown dropdown">
-            <button
-              class="btn btn-link dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              Business
-              <i class="ms-auto fa-solid fa-caret-down"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Business</a></li>
-            </ul>
-          </div>
-          <div class="item item-dropdown dropdown selected">
-            <button
-              class="btn btn-link dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              제품
-              <i class="ms-auto fa-solid fa-caret-down"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">제품</a></li>
-            </ul>
-          </div>
-          <div class="item item-dropdown dropdown selected">
-            <button
-              class="btn btn-link dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              전력
-              <i class="ms-auto fa-solid fa-caret-down"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">전력</a></li>
-            </ul>
-          </div>
-          <div class="item item-share ms-auto">
-            <button class="btn btn-link">
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 26 27"
-                width="26"
-                height="27"
-              >
-                <style>
-                  .a {
-                    fill: none;
-                    stroke: #000;
-                    stroke-width: 1.5;
-                  }
-                  .b {
-                    fill: #fff;
-                    stroke: #000;
-                    stroke-width: 1.5;
-                  }
-                </style>
-                <path class="a" d="m18.6 21.1l-9.8-7.5 9.8-6.7" />
-                <path
-                  class="b"
-                  d="m20.5-0.1c2.3 0 4.2 1.9 4.2 4.3 0 2.3-1.9 4.2-4.2 4.2-2.4 0-4.3-1.9-4.3-4.2 0-2.4 1.9-4.3 4.3-4.3z"
-                />
-                <path
-                  class="b"
-                  d="m20.7 17.7c2.5 0 4.5 2 4.5 4.5 0 2.5-2 4.5-4.5 4.5-2.5 0-4.5-2-4.5-4.5 0-2.5 2-4.5 4.5-4.5z"
-                />
-                <path
-                  class="b"
-                  d="m5.3 9.3c2.5 0 4.5 2 4.5 4.5 0 2.5-2 4.5-4.5 4.5-2.5 0-4.5-2-4.5-4.5 0-2.5 2-4.5 4.5-4.5z"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/icon-svg.css" />
+  <title>Document</title>
+</head>
 
-    <section>
-      <div class="container">
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-        <div class="row">row 1</div>
-      </div>
+<body>
+  <header class="container-fluid px-0">
+    <section class="row header-menu fixed-top">
+      <a class="logo col"></a>
+      <nav class="menu-mid col-6 m-auto">
+        <section class="row row-cols-5">
+          <a href="#Company">Company</a>
+          <a href="#Business">Business</a>
+          <a href="#ESG">ESG</a>
+          <a href="#News">News</a>
+          <a href="#Customer">Customer</a>
+        </section>
+      </nav>
+      <nav class="right-block col hstack">
+        <section class="dropdown ms-auto">
+          <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            KOR
+            <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">EN</a></li>
+          </ul>
+        </section>
+        <section class="search">
+          <button class="btn btn-link">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </section>
+        <div class="divider"></div>
+        <section class="more-mennu">
+          <button class="btn btn-link">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </section>
+      </nav>
     </section>
-    <footer>footer</footer>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-  ></script>
-  <script type="module" src="js/main.js"></script>
+    <section class="d-flex mid-text">
+      <article class="m-auto">제품<span>.</span></article>
+    </section>
+  </header>
+  <nav class="main-menu container-fluid px-0">
+    <section class="container px-0">
+      <section class="row h-100">
+        <section class="item item-home">
+          <button class="btn btn-link text-center">
+            <img src="./images/home.svg" alt="">
+          </button>
+        </section>
+        <section class="item item-dropdown dropdown">
+          <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Business
+            <i class="ms-auto fa-solid fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Business</a></li>
+          </ul>
+        </section>
+        <section class="item item-dropdown dropdown">
+          <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            제품
+            <i class="ms-auto fa-solid fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">제품</a></li>
+          </ul>
+        </section>
+        <section class="item item-dropdown dropdown selected">
+          <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            전력
+            <i class="ms-auto fa-solid fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">전력</a></li>
+          </ul>
+        </section>
+        <section class="item item-share ms-auto">
+          <button class="btn btn-link">
+            <img src="./images/share.svg" alt="">
+          </button>
+        </section>
+      </section>
+    </section>
+  </nav>
+  <section class="menu-quickly">
+    <nav class="wrap-menu-quickly">
+      <section class="menu-block">
+        <img src="./images/quick-menu/icon1.png" alt="img" />
+      </section>
+
+      <section class="menu-block">
+        <img src="./images/quick-menu/icon2.png" alt="img" />
+      </section>
+
+      <section class="menu-block">
+        <img src="./images/quick-menu/icon3.png" alt="img" />
+      </section>
+
+      <section class="menu-block selected">
+        <img src="./images/quick-menu/icon4.png" alt="img" />
+      </section>
+    </nav>
+  </section>
+  <section id="scroll-top" class="scroll-top d-none">
+    <section class="btn-scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+      <br>
+      TOP
+    </section>
+  </section>
+  <main>
+    <!-- title -->
+    <section class="main-title container px-0">
+      <section class="hstack gap-3">
+        <header>
+          <h1>초고압 케이블</h1>
+        </header>
+        <section class="ms-auto">
+          <button type="button" class="btn btn-product-nquiry">
+            제품 문의 <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button type="button" class="btn btn-catalog">
+            카탈로그·지명원 <i class="fa-solid fa-download"></i>
+          </button>
+        </section>
+      </section>
+    </section>
+    <!-- slide -->
+    <section class="container-fluid swiper-block px-0">
+      <figure class="swiper">
+        <!-- Additional required wrapper -->
+        <section class="swiper-wrapper">
+          <!-- Slides -->
+          <section class="swiper-slide">
+            <img src="./images/slide/image1.png" alt="image1" />
+            <figcaption>
+              <pre>
+국내 최초, 세계 9번째로 154kV OF 케이블 개발에 성공하며 초고압
+시대를 연 대한전선은, 세계 주요 시장에 고품질의 초고압 케이블을
+공급하는 선두 업체로 자리매김했습니다. 기술 개발과 품질 향상을
+위한 끊임없는 노력으로 154kV XLPE 케이블, 345kV OF 케이블 등을
+국내 처음으로 개발하였으며, 고도의 기술력을 바탕으로 아시아,
+중동, 유럽, 미주 등 글로벌 프로젝트를 성공적으로 수행하고
+차별화된 가치를 제공하고 있습니다.
+                </pre>
+            </figcaption>
+          </section>
+          <section class="swiper-slide">
+            <img src="./images/slide/image2.png" alt="image2" />
+            <figcaption>
+              <pre>
+국내 최초, 세계 9번째로 154kV OF 케이블 개발에 성공하며 초고압
+시대를 연 대한전선은, 세계 주요 시장에 고품질의 초고압 케이블을
+공급하는 선두 업체로 자리매김했습니다. 기술 개발과 품질 향상을
+위한 끊임없는 노력으로 154kV XLPE 케이블, 345kV OF 케이블 등을
+국내 처음으로 개발하였으며, 고도의 기술력을 바탕으로 아시아,
+중동, 유럽, 미주 등 글로벌 프로젝트를 성공적으로 수행하고
+차별화된 가치를 제공하고 있습니다.
+                </pre>
+            </figcaption>
+          </section>
+        </section>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </figure>
+    </section>
+    <!-- list item -->
+    <section class="container">
+      <section class="row block-item">
+        <header>케이블</header>
+        <section class="row row-cols-3">
+          <figure>
+            <img src="./images/item01/1.png" alt="" />
+            <figcaption>초고압 XLPE 케이블</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/item01/2.png" alt="" />
+            <figcaption>초고압 OF 케이블</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/item01/3.png" alt="" />
+            <figcaption>초고압 직류 케이블 (HVDC)</figcaption>
+          </figure>
+        </section>
+      </section>
+      <section class="row block-item">
+        <header>케이블</header>
+        <section class="row row-cols-3">
+          <figure>
+            <img src="./images/item02/1.png" alt="" />
+            <figcaption>초고압 XLPE 케이블</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/item02/2.png" alt="" />
+            <figcaption>초고압 OF 케이블</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/item02/3.png" alt="" />
+            <figcaption>초고압 직류 케이블 (HVDC)</figcaption>
+          </figure>
+        </section>
+      </section>
+    </section>
+    <!-- Related content -->
+    <section class="container-fluid px-0 related-content">
+      <section class="container px-0">
+        <header class="hstack gap-3">
+          연관 콘텐츠
+          <section class="paging ms-auto">
+            <button class="btn btn-paging">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <span class="page-text">1/5</span>
+            <button class="btn btn-paging">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </section>
+        </header>
+        <section class="row row-cols-3 item-list">
+          <figure>
+            <img src="./images/related-item/item1.png" alt="" />
+            <figcaption>
+              <a href="#SuccessStory">Success Story <i class="fa-solid fa-chevron-right fa-2xs"></i></a>
+              <br>
+              미국 Chino Hills 500kV 프로젝트
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="./images/related-item/item2.png" alt="" />
+            <figcaption>
+              <a href="#SuccessStory">Success Story <i class="fa-solid fa-chevron-right fa-2xs"></i></a>
+              <br>
+              싱가포르 NDC199 400kV 프로젝트
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="./images/related-item/item3.png" alt="" />
+            <figcaption>
+              <a href="#SuccessStory">Success Story <i class="fa-solid fa-chevron-right fa-2xs"></i></a>
+              <br>
+              초고압 직류 케이블 (HVDC)
+            </figcaption>
+          </figure>
+        </section>
+      </section>
+    </section>
+    <!-- Related solutions -->
+    <section class="container related-solutions">
+      <header class="hstack gap-3">
+        연관 콘텐츠
+        <section class="paging ms-auto">
+          <button class="btn btn-paging">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <span class="page-text">1/5</span>
+          <button class="btn btn-paging">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </section>
+      </header>
+      <section class="row row-cols-sm-3 row-cols-1 item-list">
+        <figure class="row mx-0">
+          <section class="text">
+            <img src="./images/related-solutions/item1.png" alt="" />
+            전력송배전
+            <i class="fa-solid fa-chevron-right fa-2xs"></i>
+          </section>
+        </figure>
+        <figure class="row mx-0">
+          <section class="text">
+            <img src="./images/related-solutions/item2.png" alt="" />
+            전력송배전
+            <i class="fa-solid fa-chevron-right fa-2xs"></i>
+          </section>
+        </figure>
+        <figure class="row mx-0">
+          <section class="text">
+            <img src="./images/related-solutions/item3.png" alt="" />
+            전력송배전
+            <i class="fa-solid fa-chevron-right fa-2xs"></i>
+          </section>
+        </figure>
+      </section>
+
+    </section>
+    <!-- view all -->
+    <section class="view-all d-flex">
+      <button class="btn btn-all mx-auto">전체 제품 보러가기 <i class="fa-solid fa-chevron-right fa-2xs"></i></button>
+    </section>
+    <!-- search -->
+    <section class="search-box row w-50 mx-auto">
+      <h1>Product Quick Search</h1>
+      <h3>필요한 제품을 바로 검색해보세요. </h3>
+      <section class="input-group mt-5">
+        <input class="form-control border-end-0 border-bottom-1" placeholder="검색어를 입력하세요. " type="search"
+          id="example-search-input">
+        <span class="input-group-append">
+          <button class="btn btn-outline-secondary bg-white border-0 ms-n5" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </span>
+      </section>
+      <section class="mt-3 suggest-block">
+        <button type="button" class="btn btn-outline-secondary btn-sm me-2">초고압케이블 </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm me-2">해저케이블</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm me-2">OF 케이블 </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm me-2">증용량가공선</button>
+      </section>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <section class="container row row-cols-2 row-cols-lg-5 mb-5 px-0">
+      <section class="footer-block col">
+        <nav class="row">
+          <p href="#" class="title">Company</p>
+          <a href="#">개요</a>
+          <a href="#">역사</a>
+          <a href="#">CI</a>
+          <a href="#">R&D</a>
+          <a href="#">인재경영</a>
+        </nav>
+      </section>
+      <section class="footer-block col">
+        <nav class="row">
+          <p href="#" class="title">Business</p>
+          <a href="#">제품</a>
+          <a href="#">솔루션</a>
+          <a href="#">성공사례</a>
+          <a href="#">네트워크</a>
+        </nav>
+      </section>
+      <section class="footer-block col">
+        <nav class="row">
+          <p class="title">ESG</p>
+          <a href="#">ESG 경영</a>
+          <a href="#">환경</a>
+          <a href="#">사회</a>
+          <a href="#">지배구조</a>
+          <a href="#">윤리경영</a>
+          <a href="#">공정거래 자율준수</a>
+          <a href="#">사이버 신문고</a>
+        </nav>
+      </section>
+      <section class="footer-block col">
+        <nav class="row">
+          <p class="title">News</p>
+          <a href="#">IR</a>
+          <a href="#">PR</a>
+        </nav>
+      </section>
+      <section class="footer-block col">
+        <nav class="row">
+          <p class="title">Customer</p>
+          <a href="#">고객문의</a>
+          <a href="#">자료실</a>
+          <a href="#">B2B</a>
+        </nav>
+      </section>
+    </section>
+    <div class="line"></div>
+    <section class="container row mb-5 px-0">
+      <header class="logo">
+        <img src="./images/logo.png" alt="logo" />
+      </header>
+      <figure class="about col-12 col-lg-9 ps-5 pe-1">
+        <header class="top">
+          <p>개인정보처리방침</p>
+          <p>이메일 무단 수집 거부</p>
+          <p>사이버 신문고</p>
+        </header>
+        <figcaption class="bottom">
+          <p>[서울 사옥] 서울특별시 서초구 양재대로2길 18 호반파크 2관</p>
+          <p>[안양 본점] 경기도 안양시 동안구 시민대로 317 대한스마트타워</p>
+          <p>대표번호:02-316-9114 </p>
+          <br>
+          COPYRIGHT ⓒ 2022 taihan Cable & Solution Co., Ltd. ALL RIGHT
+          RESERVED
+        </figcaption>
+      </figure>
+      <section class="select">
+        <section class="wrap-select">
+          Family Sites <i class="fa-solid fa-chevron-down"></i>
+        </section>
+      </section>
+    </section>
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
 </html>
